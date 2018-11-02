@@ -7,6 +7,7 @@ html {
   top: 64px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
+  color: #4a4a4a;
 }
 
 h1 {
@@ -15,18 +16,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1rem;
 }
 
+
 /* Header */
+
 
 header {
   display: flex;
@@ -83,7 +88,9 @@ li a {
   display: none;
 }
 
+
 /* Banner */
+
 
 .banner {
   background-color: #d8d8d8;
@@ -135,20 +142,26 @@ li a {
   width: 70%;
 }
 
+
 /* Info */
+
 
 .info {
   display: flex;
   justify-content: space-between;
   max-width: 1195px;
-  margin: auto;
+  width: 100%;
+  padding: 32px 0;
+  padding-left: 24px;
 }
+
 
 /* Info Main */
 
+
 .info-main {
   width: 60%;
-  padding: 32px 24px;
+  padding-right: 24px;
 }
 
 .info-main img {
@@ -159,44 +172,70 @@ li a {
   padding-top: 32px;
 }
 
+.info-p1 {
+  padding-top: 24px;
+}
+
+.info-p2 {
+  padding-top: 32px;
+  color: black;
+  font-size: 0.9rem;
+}
+
+
 /* Info Side */
 
+
 .info-side {
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
+  width: 40%;
+  border-left: solid thin #e0e2e2;
+}
+
+.info-item {
+
+}
+
+.info-image {
+  width: 35%;
+  height: auto;
 }
 
 .orientation {
-
+  padding: 0 16px 16px 16px;
+  border-bottom: solid thin #e0e2e2;
 }
 
 .campus {
-
+  padding: 16px;
+  border-bottom: solid thin #e0e2e2;
 }
 
 .lecture {
-
-}
-
-.info-item img {
-  height: auto;
-  width: 35%;
   padding: 16px;
 }
 
 .info-content {
-  display: block;
-  width: 100%;
-  padding: 16px 0;
+  width: 65%;
+  padding-left: 32px;
+}
 
+.info-content p {
+  padding: 8px 0;
+  line-height: 1.5;
 }
 
 .info-content a {
   text-decoration: none;
+  color: #4a90e2;
 }
 
+.info-mobile {
+  display: none;
+}
+
+
 /* Courses */
+
 
 .learning {
 
@@ -210,13 +249,20 @@ li a {
 
 }
 
+
 /* Mobile */
 
+
+
 /* Header */
+
+
 
 @media only screen and (max-width: 620px) {
 
+
 /* Header */
+
 
   .logo, .navigation {
     display: none;
@@ -232,7 +278,9 @@ li a {
 
 @media only screen and (max-width: 950px) {
 
+
 /* Banner */
+
 
   .banner {
     display: flex;
