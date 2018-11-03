@@ -1,326 +1,544 @@
-html {
-  font-family: "Helvetica", sans-serif;
-}
-
-.all {
-  position: relative;
-  top: 64px;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.5px;
-  color: #4a4a4a;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-
-/* Header */
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  height: 64px;
-  background-color: white;
-  z-index: 5;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  margin-left: 24px;
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.logo-image {
-  height: 2.75rem;
-}
-
-.logo-colmar {
-  color: #4a4a4a;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.logo-academy {
-  color: #9b9b9b;
-  font-size: 1.2rem;
-}
-
-nav {
-  margin-right: 24px;
-}
-
-li {
-  display: inline-flex;
-  margin-left: 16px;
-}
-
-li a {
-  color: #4a4a4a;
-  text-decoration: none;
-}
-
-.mobile-nav {
-  display: none;
-}
-
-
-/* Banner */
-
-
-.banner {
-  background-color: #d8d8d8;
-  max-width: 1160px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: none;
-}
-
-.banner-image {
-  width: 60%;
-  padding: 32px 24px;
-}
-
-.banner-image img {
-  width: 100%;
-}
-
-.banner-title {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 40%;
-  margin-bottom: 50px;
-  padding-left: 24px;
-}
-
-.banner-title h1 {
-  font-size: 2.5rem;
-
-  line-height: 1.2;
-}
-
-.banner-title h4 {
-  font-size: 1.2rem;
-  margin: 24px 0;
-  width: 60%;
-  margin-bottom: 32px;
-  line-height: 1.6;
-  font-weight: 500;
-}
-
-.button {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  background-color: #4a4a4a;
-  padding: 12px 0;
-  width: 70%;
-}
-
-
-/* Info */
-
-
-.info {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1195px;
-  width: 100%;
-  padding: 32px 0;
-  padding-left: 24px;
-}
-
-
-/* Info Main */
-
-
-.info-main {
-  width: 60%;
-  padding-right: 24px;
-}
-
-.info-main img {
-  width: 100%;
-}
-
-.info-content h2 {
-  padding-top: 32px;
-}
-
-.info-p1 {
-  padding-top: 24px;
-}
-
-.info-p2 {
-  padding-top: 32px;
-  color: black;
-  font-size: 0.9rem;
-}
-
-
-/* Info Side */
-
-
-.info-side {
-  width: 40%;
-  border-left: solid thin #e0e2e2;
-}
-
-.info-item {
-
-}
-
-.info-image {
-  width: 35%;
-  height: auto;
-}
-
-.orientation {
-  padding: 0 16px 16px 16px;
-  border-bottom: solid thin #e0e2e2;
-}
-
-.campus {
-  padding: 16px;
-  border-bottom: solid thin #e0e2e2;
-}
-
-.lecture {
-  padding: 16px;
-}
-
-.info-content {
-  width: 65%;
-  padding-left: 32px;
-}
-
-.info-content p {
-  padding: 8px 0;
-  line-height: 1.5;
-}
-
-.info-content a {
-  text-decoration: none;
-  color: #4a90e2;
-}
-
-.info-mobile {
-  display: none;
-}
-
-
-/* Courses */
-
-
-.learning {
-
-}
-
-.learning-title {
-
-}
-
-.course {
-
-}
-
-
-/* Mobile */
-
-
-
-/* Header */
-
-
-
-@media only screen and (max-width: 620px) {
-
-
-/* Header */
-
-
-  .logo, .navigation {
-    display: none;
+  html {
+    font-family: "Helvetica", sans-serif;
   }
 
-  .mobile-nav {
+  body {
+    max-width: none;
+  }
+
+  .all {
+    position: relative;
+    top: 64px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: #4a4a4a;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+
+/* Header */
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    z-index: 5;
+  }
+
+  .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0 24px;
   }
 
-@media only screen and (max-width: 950px) {
+  .logo {
+    margin-left: 24px;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .logo-image {
+    height: 2.75rem;
+  }
+
+  .logo-colmar {
+    color: #4a4a4a;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .logo-academy {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+  }
+
+  nav {
+    margin-right: 24px;
+  }
+
+  li {
+    display: inline-flex;
+    margin-left: 16px;
+  }
+
+  li a {
+    color: #4a4a4a;
+    text-decoration: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
 
 
 /* Banner */
 
 
   .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
+    background-color: #d8d8d8;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .banner-image {
+    width: 60%;
+    padding: 32px 24px;
+  }
+
+  .banner-image img {
     width: 100%;
-    padding: 0 0;
-    margin: 0 0;
   }
 
   .banner-title {
-    width: 100%;
-
-
-    margin-bottom: 0;
-    padding-left: 16px;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 50px;
+    padding-left: 24px;
   }
 
   .banner-title h1 {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    font-size: 2.5rem;
 
+    line-height: 1.2;
   }
 
   .banner-title h4 {
-    margin: 0 0;
+    font-size: 1.2rem;
+    margin: 24px 0;
+    width: 60%;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  .button {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #4a4a4a;
+    padding: 12px 0;
+    width: 70%;
+  }
+
+
+/* Info */
+
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 32px 0;
+    padding-left: 24px;
+
+    width: 100%;
+  }
+
+
+/* Info Main */
+
+
+  .info-main {
+    width: 60%;
+    padding-right: 24px;
+  }
+
+  .info-main img {
+    width: 100%;
+  }
+
+  .info-content h2 {
+    padding-top: 32px;
+  }
+
+  .info-p1 {
+    padding-top: 24px;
+  }
+
+  .info-p2 {
+    padding-top: 32px;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+
+/* Info Side */
+
+
+  .info-side {
+    width: 40%;
+    border-left: solid thin #e0e2e2;
+  }
+
+  .info-item {
+
+  }
+
+  .info-image {
+    width: 35%;
+    height: auto;
+  }
+
+  .orientation {
+    padding: 0 16px 16px 16px;
+    border-bottom: solid thin #e0e2e2;
+  }
+
+  .campus {
+    padding: 16px;
+    border-bottom: solid thin #e0e2e2;
+  }
+
+  .lecture {
+    padding: 16px;
+  }
+
+  .info-content {
+    width: 65%;
+    padding-left: 32px;
+  }
+
+  .info-content p {
+    padding: 8px 0;
+    line-height: 1.5;
+  }
+
+  .info-content a {
+    text-decoration: none;
+    color: #4a90e2;
+  }
+
+  .info-mobile {
+    display: none;
+  }
+
+
+/* Courses */
+
+
+  .learning {
+    background-color: #eaebec;
+    padding: 0 56px;
+    padding-top: 32px;
+    width: 96%;
+    justify-content: center;
+
+    max-width: 92%;
+  }
+
+  .learning-title {
+    padding-bottom: 32px;
+    width: 96%;
+    text-align: center;
+  }
+
+  .courses {
+    padding: 0 16px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .courses-content p {
+    line-height: 1.5;
+  }
+
+  .courses-content h4,
+  .courses-content p {
+    color: #797979;
+  }
+
+  .course {
+    background-color: white;
+    width: 32%;
+    margin-bottom: 32px;
+  }
+
+  .course img {
+    height: auto;
+    width: 100%;
+  }
+
+  .courses-content {
+    padding-top: 16px;
+    padding-left: 16px;
     padding-bottom: 24px;
   }
 
-  .banner-title a {
-    align-self: center;
-    margin-bottom: 32px;
-    width: 90%;
-    margin-right: 16px;
+  .courses-content h4 {
+    padding: 8px 0;
   }
 
-}
+  .mobile-courses {
+    display: none;
+  }
+
+
+/* Thesis */
+
+
+  .thesis {
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    padding-right: 12px;
+    line-height: 1.5;
+  }
+
+  .thesis p {
+    color: #797979;
+  }
+
+  .thesis-title {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-bottom: 32px;
+  }
+
+  .thesis-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .thesis-left {
+    width: 60%;
+  }
+
+  .thesis-video {
+    width: 100%;
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
+
+  .thesis-left-content {
+    width: 100%;
+  }
+
+  .thesis-left-content h2 {
+    padding-bottom: 8px;
+  }
+
+  .thesis-left-content p {
+    padding-bottom: 32px;
+  }
+
+  .thesis-right {
+    width: 40%;
+  }
+
+  .thesis-content {
+    width: 100%;
+  }
+
+  .thesis-content img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .thesis-content-right {
+    width: 65%;
+  }
+
+  .thesis-content-right h3 {
+    padding-bottom: 12px;
+  }
+
+
+/* Footer */
+
+
+  footer {
+    border-top: solid thin #e0e2e2;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    font-size: 0.8rem;
+    color: #797979;
+    margin-top: 32px;
+  }
+
+
+/* Mobile */
+
+
+  @media only screen and (max-width: 620px) {
+
+
+/* Header */
+
+
+    .logo,
+    .navigation {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 24px;
+    }
+
+
+/* Banner */
+
+
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .banner-image {
+      width: 100%;
+      padding: 0 0;
+      margin: 0 0;
+    }
+
+    .banner-title {
+      width: 100%;
+      margin-bottom: 0;
+      padding-left: 16px;
+    }
+
+    .banner-title h1 {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+    }
+
+    .banner-title h4 {
+      margin: 0 0;
+      padding-bottom: 24px;
+    }
+
+    .banner-title a {
+      align-self: center;
+      margin-bottom: 32px;
+      width: 90%;
+      margin-right: 16px;
+    }
+
+    .button {
+      background-color: #9b9b9b;
+    }
+
+/* Information */
+
+    .info-main {
+      display: none;
+    }
+
+    .info-image {
+      display: none;
+    }
+
+    .info-side,
+    .orientation,
+    .campus {
+      border: none;
+    }
+
+    .info-mobile {
+      display: flex;
+
+      width: 91%;
+    }
+
+    .info-side {
+      width: 100%;
+      padding: 0px 16px 32px 16px;
+    }
+
+    .info-item {
+      display: block;
+    }
+
+    .info-content {
+      padding-left: 16px;
+      padding-top: 32px;
+    }
+
+    .orientation {
+      padding-bottom: 32px;
+    }
+
+    .campus {
+      padding-bottom: 32px;
+    }
+
+    .lecture {
+      padding-bottom: 0px;
+    }
+
+
+/*Courses */
+
+    .learning {
+      background-color: white;
+      border-top: solid thin #e0e2e2;
+      margin-bottom: 32px;
+    }
+
+    .learning-title {
+      padding-bottom: 0;
+    }
+
+    .course {
+      display: none;
+    }
+
+    .mobile-courses {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 0 16px;
+    }
+
+    .mobile-courses a {
+      text-decoration: none;
+      color: #4a4a4a;
+      padding-top: 24px;
+      padding-left: 16px;
+      padding-bottom: 24px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      background-color: #d8d8d8;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+  }
