@@ -47,6 +47,11 @@
     z-index: 5;
   }
 
+  header a:hover {
+    opacity: 0.7;
+    color: #4a90e2;
+  }
+
   .flex {
     display: flex;
     justify-content: space-between;
@@ -144,6 +149,10 @@
     width: 70%;
   }
 
+  .button:hover {
+    background-color: #757575;
+    transition: opacity 2s, ease-in, 0.2s;
+  }
 
 /* Info */
 
@@ -151,11 +160,8 @@
   .info {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 32px 0;
     padding-left: 24px;
-
-    width: 100%;
   }
 
 
@@ -194,8 +200,9 @@
     border-left: solid thin #e0e2e2;
   }
 
-  .info-item {
-
+  .info-item:hover {
+    background-color: #d8d8d8;
+    transition: background-color 0.1s ease-in 0.1s;
   }
 
   .info-image {
@@ -222,6 +229,10 @@
     padding-left: 32px;
   }
 
+  .info-content a:hover {
+    opacity: 0.6;
+  }
+
   .info-content p {
     padding: 8px 0;
     line-height: 1.5;
@@ -244,9 +255,7 @@
     background-color: #eaebec;
     padding: 0 56px;
     padding-top: 32px;
-    width: 96%;
     justify-content: center;
-
     max-width: 92%;
   }
 
@@ -280,6 +289,11 @@
     margin-bottom: 32px;
   }
 
+  .course:hover {
+      background-color: #d8d8d8;
+      transition: opacity 0.1s ease-in 0.1s;
+  }
+
   .course img {
     height: auto;
     width: 100%;
@@ -304,7 +318,6 @@
 
 
   .thesis {
-    width: 100%;
     padding-top: 32px;
     padding-left: 24px;
     padding-bottom: 32px;
@@ -331,23 +344,23 @@
 
   .thesis-left {
     width: 60%;
+    padding-right: 24px;
   }
 
   .thesis-video {
     width: 100%;
-    padding-right: 24px;
     padding-bottom: 24px;
   }
 
-  .thesis-left-content {
+  .thesis-content-left {
     width: 100%;
   }
 
-  .thesis-left-content h2 {
+  .thesis-content-left h2 {
     padding-bottom: 8px;
   }
 
-  .thesis-left-content p {
+  .thesis-content-left p {
     padding-bottom: 32px;
   }
 
@@ -357,6 +370,11 @@
 
   .thesis-content {
     width: 100%;
+  }
+
+  .thesis-content:hover {
+    background-color: #d8d8d8;
+    transition: opacity 0.1s ease-in 0.1s;
   }
 
   .thesis-content img {
@@ -432,17 +450,20 @@
       width: 100%;
       margin-bottom: 0;
       padding-left: 16px;
+      box-sizing: border-box;
     }
 
     .banner-title h1 {
       padding-top: 32px;
       padding-bottom: 32px;
-
+      padding-left: 16px;
+      padding-right: 34px;
     }
 
     .banner-title h4 {
       margin: 0 0;
       padding-bottom: 24px;
+      padding-left: 16px;
     }
 
     .banner-title a {
@@ -456,7 +477,13 @@
       background-color: #9b9b9b;
     }
 
+
 /* Information */
+
+
+    .info {
+      padding-left: 0;
+    }
 
     .info-main {
       display: none;
@@ -474,13 +501,12 @@
 
     .info-mobile {
       display: flex;
-
-      width: 91%;
+      width: 100%;
     }
 
     .info-side {
       width: 100%;
-      padding: 0px 16px 32px 16px;
+      padding: 0px 16px 16px 16px;
     }
 
     .info-item {
@@ -505,12 +531,16 @@
     }
 
 
-/*Courses */
+/* Courses */
+
 
     .learning {
       background-color: white;
       border-top: solid thin #e0e2e2;
       margin-bottom: 32px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 18px;
     }
 
     .learning-title {
@@ -525,7 +555,6 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      padding: 0 16px;
     }
 
     .mobile-courses a {
@@ -539,6 +568,48 @@
       background-color: #d8d8d8;
       font-size: 1.2rem;
       font-weight: 500;
+    }
+
+    .mobile-courses a:hover {
+      background-color: #4a4a4a;
+      transition: background-color ease-in;
+      color: white;
+    }
+
+/* Thesis */
+
+
+    .thesis-right,
+    .thesis-content-left {
+      display: none;
+    }
+
+    .thesis {
+      border-top: solid thin #e0e2e2;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .thesis-left {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .thesis-video {
+      margin-bottom: 24px;
+    }
+
+
+/* Footer */
+
+
+    footer nav {
+      display: none;
+    }
+
+    footer .copyright {
+      padding: 16px 12px;
+      color: #4a4a4a;
     }
 
   }
